@@ -79,9 +79,6 @@ resource "google_artifact_registry_repository" "api_docker" {
 resource "google_secret_manager_secret" "oauth_client_id" {
   project   = var.project_id
   secret_id = "client_id_secret"
-  replication {
-    automatic = "true"
-  }
 
   # Adding depends_on prevents race conditions in API enablement
   # This is a workaround for:
