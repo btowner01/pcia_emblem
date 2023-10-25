@@ -27,11 +27,7 @@ fi
 echo -e "Bootstrapping Emblem...\n"
 
 # Set other variables
-OPS_PROJECT_NUMBER=$(gcloud projects list --format='value(PROJECT_NUMBER)' --filter=PROJECT_ID=$OPS_PROJECT)
-if [[ -z "${OPS_PROJECT_NUMBER}" ]]; then
-    echo -e "---\n${RED}Emblem bootstrap error:${NC} Could not retrieve project number for $(tput bold)${OPS_PROJECT}$(tput sgr0).\n---"
-    exit 1
-fi
+OPS_PROJECT_NUMBER=1086900328943
 
 EMBLEM_TF_SERVICE_ACCOUNT=emblem-terraformer@${OPS_PROJECT}.iam.gserviceaccount.com
 BUILD_SERVICE_ACCOUNT=${OPS_PROJECT_NUMBER}@cloudbuild.gserviceaccount.com
