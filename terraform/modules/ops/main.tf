@@ -81,7 +81,7 @@ resource "google_secret_manager_secret" "oauth_client_id" {
   project   = var.project_id
   secret_id = "client_id_secret"
   replication {
-    automatic = "true"
+    auto {}
   }
 
   # Adding depends_on prevents race conditions in API enablement
@@ -95,7 +95,7 @@ resource "google_secret_manager_secret" "oauth_client_secret" {
   project   = var.project_id
   secret_id = "client_secret_secret"
   replication {
-    automatic = "true"
+    auto {}
   }
 
   # Adding depends_on prevents race conditions in API enablement
