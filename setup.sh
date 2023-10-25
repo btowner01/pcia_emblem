@@ -32,7 +32,7 @@ OPS_PROJECT=pcia-v1-10202023             #GCP Project ID of the operations proje
 #   SKIP_DEPLOY             If set, do not deploy services
 #   SKIP_SEEDING            If set, do not seed the database
 #   USE_DEFAULT_ACCOUNT     If set, do not prompt for a GCP Account Name during database seeding
-#   REGION                  Default region to deploy resources to. Defaults to 'us-central1'
+REGION='us-central1'                  #Default region to deploy resources to. Defaults to 'us-central1'
 
 # Default to empty or default values, avoiding unbound variable errors.
 SKIP_TRIGGERS=${SKIP_TRIGGERS:-}
