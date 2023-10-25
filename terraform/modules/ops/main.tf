@@ -77,6 +77,7 @@ resource "google_artifact_registry_repository" "api_docker" {
 # to setup authentication if your Emblem instance is missing secret versions.
 
 resource "google_secret_manager_secret" "oauth_client_id" {
+  provider = google-beta
   project   = var.project_id
   secret_id = "client_id_secret"
   replication {
@@ -90,6 +91,7 @@ resource "google_secret_manager_secret" "oauth_client_id" {
 }
 
 resource "google_secret_manager_secret" "oauth_client_secret" {
+  provider = google-beta
   project   = var.project_id
   secret_id = "client_secret_secret"
   replication {
