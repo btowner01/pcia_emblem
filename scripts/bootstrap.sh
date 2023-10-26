@@ -27,7 +27,7 @@ fi
 echo -e "Bootstrapping Emblem...\n"
 
 # Set other variables
-OPS_PROJECT_NUMBER=144331263830
+OPS_PROJECT_NUMBER=619720286166
 
 EMBLEM_TF_SERVICE_ACCOUNT=emblem-terraformer@${OPS_PROJECT}.iam.gserviceaccount.com
 BUILD_SERVICE_ACCOUNT=${OPS_PROJECT_NUMBER}@cloudbuild.gserviceaccount.com

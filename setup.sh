@@ -25,7 +25,7 @@ trap '_error_report $LINENO' ERR
 # Variable list
 PROD_PROJECT=pcia-prod-10262023            #GCP Project ID of the production project
 STAGE_PROJECT=pcia-stage-10262023           #GCP Project ID of the staging project
-OPS_PROJECT=pcia-v1-10262023             #GCP Project ID of the operations project
+OPS_PROJECT=pcia-v2-10262023             #GCP Project ID of the operations project
 #   SKIP_TRIGGERS           If set, don't set up build triggers
 #   SKIP_AUTH               If set, do not prompt to set up auth
 #   SKIP_BUILD              If set, do not build container images
